@@ -1,0 +1,21 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication1
+{
+class Program
+{
+static void Main(string[] args)
+{
+int f, c;
+
+f = 76;
+Console.WriteLine("The Value of F:{0}",f);
+c = (f - 32) * 5 / 9;
+Console.WriteLine("The Value of C:{0}",c);
+Console.ReadKey();
+}
+}
+}
