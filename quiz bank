@@ -1,0 +1,363 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.IO;
+
+namespace student_Info
+{
+class quiz
+{
+string name;
+string fathername;
+string gender;
+string semester;
+string program;
+int result = 0;
+int choice;
+
+public void data()
+{
+Console.Write(“\t\t\t\t\tName: “);
+name = Console.ReadLine();
+Console.Write(“\t\t\t\t\tFather Name: “);
+fathername = Console.ReadLine();
+Console.Write(“\t\t\t\t\tGender: “);
+gender = Console.ReadLine();
+Console.Write(“\t\t\t\t\tSemester: “);
+semester = Console.ReadLine();
+Console.Write(“\t\t\t\t\tProgram: “);
+program = Console.ReadLine();
+Console.ReadLine();
+}
+
+public void test()
+{
+Console.WriteLine(“==================MCQS===================\n”);
+Console.WriteLine(“Note: Choose The Correct Answer (1,2,3,4)\n”);
+Console.WriteLine(“1. An error in a computer program.\n 1) Crash\n 2) Power Failure\n 3) Bug\n 4) Virus”);
+choice = Convert.ToInt32(Console.ReadLine());
+if (choice == 3)
+{
+Console.WriteLine(“\nCorrect”);
+result += 1;
+}
+else
+{
+Console.WriteLine(“\nWrong”);
+result -= 1;
+Console.ReadKey();
+}
+Console.WriteLine(“2. Which of these is a point and draw device?\n 1) Mouse\n 2) Scanner\n 3) Printer\n 4) CD-ROM”);
+choice = Convert.ToInt32(Console.ReadLine());
+if (choice == 1)
+{
+Console.WriteLine(“\nCorrect”);
+result += 1;
+}
+else
+{
+Console.WriteLine(“\nWrong”);
+result -= 1;
+
+}
+Console.WriteLine(“3.What is the overall term for creating editing, formatting, storing, retrieving and printing a text document?\n 1) Database management\n 2) Spreadsheet design\n 3) Web design\n 4) Word processing”);
+
+choice = Convert.ToInt32(Console.ReadLine());
+if (choice == 4)
+{
+Console.WriteLine(“\nCorrect”);
+result += 1;
+}
+else
+{
+Console.WriteLine(“\nWrong”);
+result -= 1;
+Console.ReadKey();
+}
+Console.WriteLine(“4.Who is the chief of Microsoft\n 1) Babbage\n 2) Bill Gates\n 3) Bill Clinton\n 4) none of these”);
+choice = Convert.ToInt32(Console.ReadLine());
+if (choice == 2)
+{
+Console.WriteLine(“\nCorrect”);
+result += 1;
+}
+else
+{
+Console.WriteLine(“\nWrong”);
+result -= 1;
+Console.ReadKey();
+}
+Console.WriteLine(“5. C’ in CPU denotes_________\n 1) Convenient\n 2) Common\n 3) Central\n 4) Computer”);
+choice = Convert.ToInt32(Console.ReadLine());
+if (choice == 3)
+{
+Console.WriteLine(“\nCorrect”);
+result += 1;
+}
+else
+{
+Console.WriteLine(“\nWrong”);
+result -= 1;
+Console.ReadKey();
+}
+Console.WriteLine(“6.MAN stands for_________\n 1) Maximum Area Network\n 2) Minimum Area Network\n 3) Main Area Network\n 4) Metropolitan Area Network”);
+choice = Convert.ToInt32(Console.ReadLine());
+if (choice == 4)
+{
+Console.WriteLine(“\nCorrect”);
+result += 1;
+}
+else
+{
+Console.WriteLine(“\nWrong”);
+result -= 1;
+Console.ReadKey();
+}
+Console.WriteLine(“7. VGA is_______\n 1) Video Graphics Array\n 2) Visual Graphics Array \n 3) Volatile Graphics Array\n 4) Video Graphics Adapter”);
+choice = Convert.ToInt32(Console.ReadLine());
+if (choice == 4)
+{
+Console.WriteLine(“\nCorrect”);
+result += 1;
+}
+else
+{
+Console.WriteLine(“\nWrong”);
+result -= 1;
+Console.ReadKey();
+}
+Console.WriteLine(“8. ASCII is a coding system that provides\n 1) 256 different characters\n 2) 512 different characters\n 3) 1024 different characters\n 4) 128 different characters”);
+choice = Convert.ToInt32(Console.ReadLine());
+if (choice == 3)
+{
+Console.WriteLine(“\nCorrect”);
+result += 1;
+}
+else
+{
+Console.WriteLine(“\nWrong”);
+result -= 1;
+Console.ReadKey();
+
+}
+Console.WriteLine(“9. WAN stands for_______\n 1) Wap Area Network\n 2) Wide Area Network\n 3) Wide Array Net\n 4) Wireless Area Network”);
+choice = Convert.ToInt32(Console.ReadLine());
+if (choice == 4)
+{
+Console.WriteLine(“\nCorrect”);
+result += 1;
+}
+else
+{
+Console.WriteLine(“\nWrong”);
+result -= 1;
+Console.ReadKey();
+}
+Console.WriteLine(“10. Which one of the following is NOT a computer language\n 1) MS-Excel\n 2) BASIC C\n 3) COBOL\n 4) C++”);
+choice = Convert.ToInt32(Console.ReadLine());
+if (choice == 1)
+{
+Console.WriteLine(“\nCorrect”);
+result += 1;
+}
+else
+{
+Console.WriteLine(“\nWrong”);
+result -= 1;
+Console.ReadKey();
+}
+Console.WriteLine(“11. COBOL is widely used in application\n 1) Scientific\n 2) Commercial\n 3) Space\n 4) Mathematical”);
+choice = Convert.ToInt32(Console.ReadLine());
+if (choice == 2)
+{
+Console.WriteLine(“\nCorrect”);
+result += 1;
+}
+else
+{
+Console.WriteLine(“\nWrong”);
+result -= 1;
+Console.ReadKey();
+
+}
+Console.WriteLine(“12. RAM stands for____________\n 1) Random origin money\n 2) Random only memory\n 3) Read only memory\n 4) Random access memory”);
+choice = Convert.ToInt32(Console.ReadLine());
+if (choice == 4)
+{
+Console.WriteLine(“\nCorrect”);
+result += 1;
+}
+else
+{
+Console.WriteLine(“\nWrong”);
+result -= 1;
+Console.ReadKey();
+
+}
+
+Console.WriteLine(“13. BIOS stands for__________\n 1) Binary Input output system\n 2) Basic Input Output system\n 3) Basic Input Off system\n 4) all the above”);
+choice = Convert.ToInt32(Console.ReadLine());
+if (choice == 2)
+{
+Console.WriteLine(“\nCorrect”);
+result += 1;
+}
+else
+{
+Console.WriteLine(“\nWrong”);
+result -= 1;
+Console.ReadKey();
+}
+Console.WriteLine(“14. Father of “C‘ programming language\n 1) Bill Gates\n 2) Prof John Keenly\n 3) Dennis Ritchie\n 4) Thomas Kurtz”);
+choice = Convert.ToInt32(Console.ReadLine());
+if (choice == 3)
+{
+Console.WriteLine(“\nCorrect”);
+result += 1;
+}
+else
+{
+Console.WriteLine(“\nWrong”);
+result -= 1;
+Console.ReadKey();
+
+}
+Console.WriteLine(“15. ______________ computer are of large size\n 1) Micro\n 2) Mainframe\n 3) Super\n 4) Mini”);
+choice = Convert.ToInt32(Console.ReadLine());
+if (choice == 2)
+{
+Console.WriteLine(“\nCorrect”);
+result += 1;
+}
+else
+{
+Console.WriteLine(“\nWrong”);
+result -= 1;
+Console.ReadKey();
+
+}
+Console.WriteLine(“16. 1 Byte = __________ \n 1)8 bits\n 2) 4 bits\n 3) 2 bits\n 4) 9 bits”);
+choice = Convert.ToInt32(Console.ReadLine());
+if (choice == 1)
+{
+Console.WriteLine(“\nCorrect”);
+result += 1;
+}
+else
+{
+Console.WriteLine(“\nWrong”);
+result -= 1;
+
+}
+Console.WriteLine(“17. Computers, combine both measuring and counting, are called_______\n 1) Analog\n 2) Hybrid\n 3) Digital\n 4) All of these”);
+choice = Convert.ToInt32(Console.ReadLine());
+if (choice == 2)
+{
+Console.WriteLine(“\nCorrect”);
+result += 1;
+}
+else
+{
+Console.WriteLine(“\nWrong”);
+result -= 1;
+Console.ReadKey();
+}
+Console.WriteLine(“18. LAN stands for__________\n 1) Local Area Network\n 2) Logical Area Network\n 3) Limited Area Network\n 4) Large Area Network”);
+choice = Convert.ToInt32(Console.ReadLine());
+if (choice == 1)
+{
+Console.WriteLine(“\nCorrect”);
+result += 1;
+}
+else
+{
+Console.WriteLine(“\nWrong”);
+result -= 1;
+Console.ReadKey();
+}
+Console.WriteLine(“19. DOS stands for________\n 1) Digital Operating System\n 2) Disk Operating System\n 3) Disk operating session\n 4) Digital Open system”);
+choice = Convert.ToInt32(Console.ReadLine());
+if (choice == 2)
+{
+Console.WriteLine(“\nCorrect”);
+result += 1;
+}
+else
+{
+Console.WriteLine(“\nWrong”);
+result -= 1;
+Console.ReadKey();
+}
+Console.WriteLine(“20. ALU is_______\n 1)Application Logic Unit \n 2) Array Logic Unit\n 3) Arithmetic Logic Unit\n 4) None of above”);
+choice = Convert.ToInt32(Console.ReadLine());
+if (choice == 3)
+{
+Console.WriteLine(“\nCorrect”);
+result += 1;
+}
+else
+{
+Console.WriteLine(“\nWrong”);
+result -= 1;
+Console.ReadKey();
+}
+
+}
+
+public void display()
+{
+using (StreamWriter sw = new StreamWriter(“D:\\def\\haseeb.txt”))
+{
+sw.WriteLine(“\n\n\t\t\t=====================================================================”);
+sw.WriteLine(“\t\t\t************Sir Syed University University Karachi***************”);
+sw.WriteLine(“\t\t\t=====================================================================\n”);
+sw.WriteLine(“\t\t\t\t\tName: {0}”, name);
+sw.WriteLine(“\t\t\t\t\tFather Name: {0}”, fathername);
+sw.WriteLine(“\t\t\t\t\tGender: {0}”, gender);
+sw.WriteLine(“\t\t\t\t\tSemester: {0}”, semester);
+sw.WriteLine(“\t\t\t\t\tProgram: {0}”, program);
+sw.WriteLine(“\t\t\t\t\tYour score is: ” + result + ” out of 20\n”);
+Console.ReadLine();
+sw.Close();
+}
+
+string line = “”;
+using (StreamReader sr = new StreamReader(“D:\\abc\\haseeb.txt”))
+{
+while ((line = sr.ReadLine()) != null)
+{
+Console.WriteLine(“\n\n\t\t\t=====================================================================”);
+Console.WriteLine(“\t\t\t************Sir Syed University University Karachi***************”);
+Console.WriteLine(“\t\t\t=====================================================================\n”);
+Console.WriteLine(“\t\t\t\t\tName: {0}”, name);
+Console.WriteLine(“\t\t\t\t\tFather Name: {0}”, fathername);
+Console.WriteLine(“\t\t\t\t\tGender: {0}”, gender);
+Console.WriteLine(“\t\t\t\t\tSemester: {0}”, semester);
+Console.WriteLine(“\t\t\t\t\tProgram: {0}”, program);
+Console.WriteLine(“\t\t\t\t\tYour score is: ” + result + ” out of 20\n”);
+Console.Read();
+sr.Close();
+}
+Console.ReadKey();
+}
+
+}
+class Execute
+{
+static void Main(string[] args)
+{
+quiz q = new quiz();
+Console.WriteLine(“\n\n\t\t\t=====================================================================”);
+Console.WriteLine(“\t\t\t************Sir Syed University University Karachi***************”);
+Console.WriteLine(“\t\t\t=====================================================================\n”);
+q.data();
+Console.Clear();
+q.test();
+Console.Clear();
+q.display();
+Console.ReadKey();
+}
+}
+}
+}
