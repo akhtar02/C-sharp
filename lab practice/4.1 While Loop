@@ -1,0 +1,26 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication10
+{
+class Program
+{
+static void Main(string[] args)
+{
+int a, b=1;
+a = 5;
+Console.WriteLine("The Number is:{0}",a);
+Console.WriteLine("\n");
+
+while (b<= 12)
+{
+Console.WriteLine("{0}*{1}={2}",a,b,a*b);
+b++;
+}
+Console.ReadKey();
+}
+}
+}
+
