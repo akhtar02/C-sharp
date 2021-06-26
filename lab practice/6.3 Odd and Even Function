@@ -1,0 +1,42 @@
+class Program
+{
+public void odd()
+{
+int a;
+for(a=1;a<=30;a=a+2)
+{
+Console.Write("\n{0}",a);
+}
+}
+static void Main(string[] args)
+{
+Program a = new Program();
+a.odd();
+Console.ReadKey();
+}
+}
+
+
+/////////////////////// Even function
+class Program
+{
+public void evenodd()
+{
+int num1;
+num1 = 6;
+Console.WriteLine("Number is:{0}",num1);
+if (num1 % 2 == 0)
+{
+Console.WriteLine("This is Even number");
+}
+else
+{
+Console.WriteLine("This is Odd number");
+}
+}
+static void Main(string[] args)
+{
+Program m = new Program();
+m.evenodd();
+Console.ReadKey();
+}}
