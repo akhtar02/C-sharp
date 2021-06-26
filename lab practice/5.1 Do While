@@ -1,0 +1,24 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication11
+{
+class Program
+{
+static void Main(string[] args)
+{
+int a = 1, b = 2, c = 3, d = 4, e;
+
+Console.WriteLine("The values is A={0},B={1},C={2},D={3}",a,b,c,d);
+Do
+{
+e=a+b+c+d;
+Console.WriteLine("Their sum is {0}" ,e);
+e++;
+}while(e<0);
+Console.ReadKey();
+} 
+}
+}
