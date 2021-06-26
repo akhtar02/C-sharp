@@ -1,0 +1,20 @@
+using System;
+					
+public class Program
+{
+	 public void str(){
+        string s;
+       
+        
+        Console.Write("Enter your name: ");
+		s= Console.ReadLine();
+        Console.Write("\nYour Name is: {0}",s);
+    }
+	
+	public static void Main()
+	{	
+		 Program a = new Program();
+        a.str();
+       
+	}
+}
