@@ -1,0 +1,23 @@
+using System;
+					
+public class Program
+{
+	 public void str(){
+        string fname, lname;
+        fname="Akhtar";
+        lname="Hussain";
+        
+        Console.Write("First name is: {0}", fname);
+        Console.Write("\nLast Name is: {0}", lname);
+		
+		string fullname =  fname + lname;
+		 Console.Write("\n\nfull name is: {0}", fullname);
+    }
+	
+	public static void Main()
+	{	
+		 Program a = new Program();
+        a.str();
+       
+	}
+}
