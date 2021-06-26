@@ -1,0 +1,25 @@
+Table Program by using For Loop:
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ConsoleApplication6
+{
+class Program
+{
+static void Main(string[] args)
+{
+int a, b;
+a = 6;
+Console.WriteLine("The Number is {0}",a);
+Console.WriteLine("\n");
+
+for (b = 1; b <= 12; b++)
+{
+Console.WriteLine("{0}*{1}={2}",a,b,a*b);
+}
+Console.ReadKey();
+}
+}
+}
